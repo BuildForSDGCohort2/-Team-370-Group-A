@@ -80,9 +80,9 @@ id="myInput"onkeyup="filterFunction()">
     <a href="#base">Base</a>
     <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
-    <a href="#custom">Custom</a>
-    <a href="#support">Support</a>
-    <a href="#">Medication</a>
+    <a href>"#"custom">Custom</a>
+    <a href="#">Support</a>
+    <a href="#">medication</a>
   </div>
 
 </div>
