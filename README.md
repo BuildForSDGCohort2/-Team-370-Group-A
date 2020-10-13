@@ -1,5 +1,325 @@
+
+<!DOCTYPE html>
 <html>
+<style>
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #48d1cc;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #4682b4;
+}
+
+/* Center the image and position
+the close button */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+   padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)}
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel
+button on extra small screens */
+
+@media screen and(max-width: 300px){
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+
+<h2> Znakekele Health Clinic</h2>
+
+<button onclick="document.
+getElementById('id01')
+
+.style.display='block'"
+style="width:auto;">Login
+</button>
+
+<div id="id01" class="modal">
+
+<form class="modal-content animate"
+action="action_page.php">
+<div class="imgcontainer">
+<span onclick="document
+.getElementById('id01')
+
+.style.display='none'"
+class="close" title="Close Modal">
+    &times;</span>
+
+<img src="img_profile.png"
+alt="Avatar"
+class="avatar">
+    </div>
+
+<div class="container">
+  <label><b>Username</b></label>
+  <input type="text" placeholder=
+  "Enter Username"
+  name="uname" required>
+
+<label><b>Password</b></label>
+<input type="password" placeholder=
+"Enter Password" name="psw" required>
+
+<button type="submit">Login</button>
+<input type="checkbox"
+checked="checked">
+Remember me
+</div>
+
+<div class="container"
+style="background-color:#f1f1f1">
+<button type="button"
+onclick="document.getElementById
+('id01').style.
+
+display='none'" class="cancelbtn">
+Cancel</button>
+<span class="psw">Forgot
+<a href="#">password?
+
+</a></span>
+  </div>
+  </form>
+</div>
+
+<script>
+
+// Get the modal
+
+var modal = document.getElementById
+('id01');
+
+// When the user clicks anywhere
+outside of the modal, close it
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+     modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
  
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#myInput {
+  background-image:
+  url('/img/search.png');
+
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>PATIENTS LIST</h2>
+
+<input type="text" id="myInput"
+onkeyup="myFunction()" placeholder=
+"Search Here.."title="Type in a name">
+
+<ul id="myUL">
+
+<li><a href="#" class="header">A</a></li>
+<li><a href="#">Abel</a></li>
+<li><a href="#">Akgonne</a></li>
+<li><a href="#">Ajela</a></li>
+
+<li><a href="#" class="header">B</a></li>
+<li><a href="#">Badimo</a></li>
+<li><a href="#">Bagaka</a></li>
+
+<li><a href="#" class="header">C</a></li>
+<li><a href="#">Cheka</a></li>
+<li><a href="#">Chuku</a></li>
+<li><a href="#">Chaka</a></li>
+
+</ul>
+
+<script>
+
+/* Declare variables */
+
+function myFunction() {
+
+var input, filter, ul, li, a, i;
+input=document.getElementById("myInput");
+filter = input.value.toUpperCase();
+ul = document.getElementById("myUL");
+li = ul.getElementsByTagName("li");
+
+/* Loop through all list items, and hide
+those who don't match the search query */
+
+for (i = 0; i < li.length; i++) {
+a = li[i].getElementsByTagName("a")[0];
+
+if (a.innerHTML.toUpperCase()
+.indexOf(filter) > -1) {
+  li[i].style.display = "";
+
+    } else {
+      li[i].style.display = "none";
+
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,9 +400,9 @@ id="myInput"onkeyup="filterFunction()">
     <a href="#base">Base</a>
     <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
-    <a href>"#"custom">Custom</a>
-    <a href="#">Support</a>
-    <a href="#">medication</a>
+    <a href="#custom">Custom</a>
+    <a href="#support">Support</a>
+    <a href="#">Medication</a>
   </div>
 
 </div>
@@ -153,11 +473,9 @@ ul li {
   user-select: none;
 }
 
-
 ul li:nth-child(odd) {
   background: #f9f9f9;
 }
-
 
 ul li:hover {
   background: #ddd;
@@ -168,7 +486,6 @@ ul li.checked {
   color: #fff;
   text-decoration: line-through;
 }
-
 
 ul li.checked::before {
   content: '';
@@ -208,7 +525,6 @@ ul li.checked::before {
   clear: both;
 }
 
-
 input {
   border: none;
   width: 75%;
@@ -218,7 +534,6 @@ input {
   box-sizing: border-box;
 
 }
-
 
 .addBtn {
   padding: 10px;
@@ -268,7 +583,6 @@ class="addBtn">Add</span>
 
 <script>
 
-
 var myNodelist = document
 .getElementsByTagName("LI");
 
@@ -295,7 +609,6 @@ for(i=0; i < close.length;i++){
     div.style.display = "none";
   }
 }
-
 
 var list=document.querySelector('ul');
 list.addEventListener('click',
@@ -346,9 +659,11 @@ for (i = 0; i < close.length; i++) {
 
 </body>
 </html>
- 
- 
- <!DOCTYPE html>
+
+
+
+
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -464,191 +779,3 @@ acc[i].onclick = function(){
 
 </body>
 </html>
-
-
- 
-<style>/* Full-width input fields */input[type=text],
-input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}/* Set a style for all buttons */button {
-    background-color: #48d1cc;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #4682b4;
-}/* Center the image and position
-the close button */.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}.container {
-    padding: 16px;
-}span.psw {
-    float: right;
-    padding-top: 16px;
-}/* The Modal (background) */.modal {
-   display: none;
-   position: fixed;
-   z-index: 1;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-   overflow: auto;
-   background-color: rgb(0,0,0);
-   background-color: rgba(0,0,0,0.4);
-   padding-top: 60px;
-}
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto;
-    border: 1px solid #888;
-    width: 80%;
-}/* The Close Button (x) */.close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}/* Add Zoom Animation */ .animate {
- -webkit-animation: animatezoom 0.6s;
- animation: animatezoom 0.6s
-}@-webkit-keyframes animatezoom {
- from {-webkit-transform: scale(0)}
- to {-webkit-transform: scale(1)}
-}@keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}/* Change styles for span and cancel
-button on extra small screens */ @media screen and(max-width: 300px){
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
-</style>
-<body><h2> Znakekele Health Clinic</h2><button onclick="document.
-getElementById('id01').style.display='block'"
-style="width:auto;">Login
-</button><div id="id01" class="modal"><form class="modal-content animate"
-action="action_page.php">
-<div class="imgcontainer">
-<span onclick="document
-.getElementById('id01').style.display='none'"
-class="close" title="Close Modal">
-    &times;</span> <img src="img_profile.png"
- alt="Avatar"
- class="avatar">
-    </div>
- <div class="container">
-  <label><b>Username</b></label>
-  <input type="text" placeholder=
-  "Enter Username"
-  name="uname" required>
-<label><b>Password</b></label>
-<input type="password" placeholder=
-"Enter Password" name="psw" required>
-<button type="submit">Login</button>
-<input type="checkbox"
-checked="checked">
-Remember me
-</div>
- <div class="container"
- style="background-color:#f1f1f1">
- <button type="button"
- onclick="document.getElementById
- ('id01').style. display='none'" class="cancelbtn">
- Cancel</button>
- <span class="psw">Forgot
- <a href="#">password? </a></span>
-  </div>
-  </form>
-</div><script>// Get the modal var modal = document.getElementById
-('id01');// When the user clicks anywhere
-outside of the modal, close it window.onclick = function(event) {
-    if (event.target == modal) {
-     modal.style.display = "none";
-    }
-}
-</script></body>
-</html
-
-}
-</script>
-
-</body>
-
-</body>
-
-</body>
-
-</body>
-
-</body>
-
-</body>
-
-</body>
-
-<h1>Znakekele</h1>
-
-<p id="demo">Znakekele Health Clinic.</p>
-
- 
-
-<button type="button" onclick="myFunction()">Name and Surname</button>
-
-<br/> </n> </br>
-<button type="button" onclick="myFunction()">IDENTITY NUMBER</
-<br/> </n> </br>
-
-<button type="button" onclick="myFunction()">PATIENTS CARD    NUMBER</
-<br/> <n/> </br>
-
-<button type="button" onclick="myFunction()">TREATMENT</
-<br/></n></br>
-
-<button type="button" onclick="myFunction()">DATES</
-<br/><n/>
-
-<button type="button" onclick="myFunction()">FILE NUMBER</
-<br/></n>
-
-<button type="button" onclick="myFunction()">STUFF</
-<br/><n/><br/>
-
-<button type="button" onclick="myFunction()">PROVINCE HEALTH DEPARTMENT</
-<br/></n><br/>
-
-<button type="button" onclick="myFunction()">Znakekele</
-<br/><n/><br/>
-
-<button type="button" onclick="myFunction()">Znakekele</
-<br/></n></br>
-
-<button type="button" onclick="myFunction()">Znakekele</
-</body>
-</html> 
