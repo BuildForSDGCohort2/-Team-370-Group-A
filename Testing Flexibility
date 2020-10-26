@@ -1,0 +1,32 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color:blue;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+<h2>Limba</h2>
+<p>Limba is the President and founder of DIGITAL-INKsolution.</p>
+</div>
+
+<div class="city">
+<h2>Limba</h2>
+<p>Limba is the CEO of DIGITAL-INKsolution.</p>
+</div>
+
+<div class="city">
+<h2>Limba</h2>
+<p>Limba is the of MD of DIGITAL-INKsolution.</p>
+</div>
+
+</body>
+</html>
